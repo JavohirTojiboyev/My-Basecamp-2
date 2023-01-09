@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @volt %>
+
+<div>
+  <%= link_to "Edit this volt", edit_volt_path(@volt) %> |
+  <%= link_to "Back to volts", volts_path %>
+
+  <%= button_to "Destroy this volt", @volt, method: :delete %>
+</div>

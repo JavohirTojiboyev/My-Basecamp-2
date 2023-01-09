@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @send %>
+
+<div>
+  <%= link_to "Edit this send", edit_send_path(@send) %> |
+  <%= link_to "Back to sends", sends_path %>
+
+  <%= button_to "Destroy this send", @send, method: :delete %>
+</div>

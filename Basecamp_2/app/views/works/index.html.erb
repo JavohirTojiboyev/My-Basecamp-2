@@ -1,0 +1,88 @@
+<br><br><br>
+<h1 align="center">To-Dos</h1>
+
+<%= render "form", work: @work %>
+
+<div id="works">
+  <% @works.each do |work| %>
+     <p align="center"><%= work.title %>
+     <% if work.title %>
+     <%= link_to work, "data-turbo-method": :delete do %>
+
+    <i class="bi bi-trash3"></i>
+     
+     <% end %>
+     <% end %>
+     </p> 
+  <% end %>
+</div>
+</div>
+
+
+<%= link_to "Back", project_path(@project), class:"button-26"  %>
+
+<style>
+  .button-26 {
+  margin-top: -518px;
+  text-decoration: none;
+  background: #adadad;
+  border: 1px solid #adadad;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-26:hover,
+.button-26:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #adadad;
+}
+
+.button-26:active {
+  opacity: .5;
+}
+
+.button-25 {
+  text-decoration: none;
+  background: #ffa642;
+  border: 1px solid #ffa642;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+</style>

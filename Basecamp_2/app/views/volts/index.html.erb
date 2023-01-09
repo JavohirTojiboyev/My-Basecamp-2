@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Volts</h1>
+
+<div id="volts">
+  <% @volts.each do |volt| %>
+    <%= render volt %>
+    <p>
+      <%= link_to "Show this volt", volt %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New volt", new_volt_path %>
